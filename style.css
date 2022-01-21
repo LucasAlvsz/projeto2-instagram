@@ -1,0 +1,351 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+.header{
+    background-color:#FFFFFF;
+    width:100%;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: 2;
+}
+.conteudo-header{
+    display: flex;
+    align-items: center;
+}
+.icone-logo{
+    width: 19.25px;
+    font-size: 19.25px;
+}
+.borda-vertical-header{
+    height: 22px;
+    border-right: 1px solid #DBDBDB;
+    margin-right: 10px;
+    margin-left: 11.38px;
+}
+.conteudo-header img{
+    width: 103px;
+    height: 29px;
+}
+.box-pesquisa{
+    background-color: #FAFAFA;
+    width: 215px;
+    height: 26px;
+    border: 1px solid #DBDBDB;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+    color:#979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 214px;
+}
+.icones-esq{
+    display: flex;
+    color: #000000;
+    margin-left: 190px;
+    
+}
+.direct{
+    width: 17.87px;
+    font-size: 24px;
+}
+.explorer{
+    width: 16.5px;
+    font-size: 24px;
+    margin-left: 22px;
+}
+.activity{
+    width: 16.5px;
+    font-size: 24px;
+    margin-left: 22px;
+}
+.perfil{
+    width: 16.5px;
+    font-size: 24px;
+    margin-left: 22px;
+}
+.save{
+    font-size: 24px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.corpo-ig{
+    height: calc(100vh - 54px);
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.histories-box{
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 0 0.5px grey;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.barra-rolagem-histories{
+    position: absolute;
+    font-size: 26px;
+    right: 8px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.histories{
+    position: relative;
+    margin-left: 14px;
+
+}
+.borda-histories img{
+    width: 66px;
+    height: 66px;
+}
+.histories-img img{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.texto-histories{
+    text-align: center;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+}
+
+
+.post-feed{
+    background-color: #FFFFFF;
+    border: 2px solid #DBDBDB;
+    box-shadow: 0 0 0.5px grey;
+    width: 614px;
+    height: 749px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.header-post{
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+}
+.texto-header-post{
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 2.25px;
+    color: #262626;
+}
+
+.header-post img{
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    border-radius: 16px;
+}
+.img-post img{
+    width: 614px;
+    height: 612px;
+    
+}
+.icone-header{
+    font-size: 20px;
+    margin-left: 465px;
+}
+.bottom-bar-post{
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 76px;
+}
+.bottom-bar-icones{
+    display: flex;
+    margin-top: 7px;
+}
+
+.curtir{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.compartilhar{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.comentar{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.salvar{
+    font-size:20px;
+    margin-left: 478px;
+}
+.curtidas-post{
+    height: 21px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    line-height: 16.41;
+    margin-left: 15px;
+    margin-top: 11px;
+}
+.curtidas-post img{
+    width: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.negrito{
+    font-weight: 500;
+}
+
+.side-bar{
+    background-color: #E5E5E5;
+    width: 293px;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+}
+.conteudo-side-bar{
+    margin-left: 29px;
+    margin-top: 57px;
+}
+.perfil-usuario{
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.perfil-usuario img{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+.perfil-usuario-texto{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    margin-left: 17px;
+}
+.sugestoes{
+    width: 293px;
+    margin-top: 24px;
+}
+.sugestoes-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+.ver-tudo-cor{
+    color:#262626;
+}
+.sugestoes-perfil{
+    
+    width: 293px;
+    margin-top: 17px;
+    display: flex;
+}
+.sugestoes-perfil img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    
+}
+.perfil-sugerido{
+    width: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-sugeridos{
+    display: flex;
+    flex-direction: column;
+}
+.nome-perfil-sugerido{
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 500;
+    color: #262626;
+    margin-left: 11px;
+}
+.status-perfil-sugerido{
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+    color: #8E8E8E;
+    margin-left: 11px;
+    margin-top: 6px;
+}
+
+.seguir-sugeridos{
+    color: #139EF2;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 500;
+}
+
+@media (max-width: 935px){
+    .side-bar{
+        display: none;
+    }
+    .icone-logo{
+        margin-left: 20px;
+    }
+    .perfil{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 614px){
+    .explorer{
+        display: none;
+    }
+    .activity{
+        display: none;
+    }
+    .perfil{
+        display: none;
+    }
+    .box-pesquisa{
+        display: none;
+    }
+    .borda-vertical-header{
+        display: none;
+    }
+    .icones-esq{
+        position: absolute;
+        right: 25px;
+    }
+    .conteudo-header{
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+    .conteudo-header img{
+        left: 40%;
+        position: absolute;
+    }
+}

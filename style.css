@@ -2,6 +2,16 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
 }
+*{
+    box-sizing: border-box;
+}
+/* Header */
+.barra-inferior-mobile{
+    display: none;
+}
+.header-mobile{
+    display: none;
+}
 .header{
     background-color:#FFFFFF;
     width:100%;
@@ -12,17 +22,21 @@ body{
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border-bottom: 1px solid #DBDBDB;
     z-index: 2;
+    
 }
 .conteudo-header{
     display: flex;
+    width: 935px;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 2.5%;
 }
 .icone-logo{
-    width: 19.25px;
-    font-size: 19.25px;
+    display: flex;
+    font-size: 24px;
 }
 .borda-vertical-header{
     height: 22px;
@@ -46,38 +60,30 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 214px;
 }
-.icones-esq{
+.icones-dir{
     display: flex;
+    width: 168px;
+    justify-content: space-between;
     color: #000000;
-    margin-left: 190px;
-    
 }
 .direct{
-    width: 17.87px;
     font-size: 24px;
 }
 .explorer{
-    width: 16.5px;
     font-size: 24px;
-    margin-left: 22px;
 }
 .activity{
-    width: 16.5px;
     font-size: 24px;
-    margin-left: 22px;
 }
 .perfil{
-    width: 16.5px;
     font-size: 24px;
-    margin-left: 22px;
 }
 .save{
     font-size: 24px;
-    margin-left: 22px;
     margin-right: 22px;
 }
+/* Fim Header */
 
 .corpo-ig{
     height: calc(100vh - 54px);
@@ -85,7 +91,7 @@ body{
     display: flex;
     justify-content: center;
 }
-
+/* Histories */
 .histories-box{
     background-color: #FFFFFF;
     width: 614px;
@@ -110,7 +116,6 @@ body{
 .histories{
     position: relative;
     margin-left: 14px;
-
 }
 .borda-histories img{
     width: 66px;
@@ -130,8 +135,7 @@ body{
     line-height: 14.06px;
     font-weight: 400;
 }
-
-
+/* Fim histories */
 .post-feed{
     background-color: #FFFFFF;
     border: 2px solid #DBDBDB;
@@ -317,35 +321,71 @@ body{
     .perfil{
         margin-right: 20px;
     }
+    .conteudo-header{
+        justify-content: space-between;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 614px){
-    .explorer{
-        display: none;
-    }
-    .activity{
-        display: none;
-    }
-    .perfil{
-        display: none;
-    }
-    .box-pesquisa{
-        display: none;
-    }
-    .borda-vertical-header{
-        display: none;
-    }
-    .icones-esq{
-        position: absolute;
-        right: 25px;
-    }
-    .conteudo-header{
+    .header-mobile{
+        background-color: #FFFFFF;
         width: 100%;
+        height: 54px;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        position: relative;
+        padding-right: 20px;
     }
-    .conteudo-header img{
-        left: 40%;
-        position: absolute;
+    .corpo-ig{
+        height: calc(100vh - 108px);
+        margin-bottom: 54px;
+    }
+    .header{
+        display: none;
+    }
+    .barra-rolagem-histories{
+        display: none;
+    }
+    .histories-box{
+        background-color: #E5E5E5;
+        height: 80px;
+        border: none;
+        box-shadow: none;
+        margin-top: 18px;
+        margin-bottom: 19px;
+    }
+
+    .borda-histories img{
+        border-radius: 33px;
+    }
+    .post-feed{
+        margin-top: 0px;
+    }
+    .barra-inferior-mobile{
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 54px;
+        border: 1px solid #DBDBDB;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        color: #000000;
+    }
+    .home{
+        font-size: 24px;
+    }
+    .pesquisar{
+        font-size: 24px;
+    }
+    .add-publi{
+        font-size: 24px;
     }
 }

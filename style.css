@@ -137,12 +137,14 @@ body{
     font-weight: 400;
 }
 /* Fim histories */
+
+/* Começo Posts */
 .post-feed{
     background-color: #FFFFFF;
-    border: 2px solid #DBDBDB;
+    border-top:  1px solid #DBDBDB;
+    border-bottom:  1px solid #DBDBDB;
     box-shadow: 0 0 0.5px grey;
     width: 614px;
-    height: 749px;
     margin-top: 24px;
     margin-bottom: 60px;
 }
@@ -150,6 +152,11 @@ body{
     background-color: #FFFFFF;
     width: 614px;
     height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.perfil-post-header{
     display: flex;
     align-items: center;
 }
@@ -169,12 +176,12 @@ body{
 }
 .img-post img{
     width: 614px;
-    height: 612px;
-    
+    min-height: calc(100vh - 114px);
+    max-height: calc(100vh - 114px);
 }
 .icone-header{
     font-size: 20px;
-    margin-left: 465px;
+    margin-right: 12px;
 }
 .bottom-bar-post{
     background-color: #FFFFFF;
@@ -183,24 +190,24 @@ body{
 }
 .bottom-bar-icones{
     display: flex;
+    justify-content: space-between;
     margin-top: 7px;
+    margin-right: 12px;
 }
-.curtir{
-    font-size: 20px;
-    margin-left: 15px;
+.icones-post-esq{
+    width: 115px;
+    display: flex;    
+    justify-content: space-between;
+    margin-left: 12px;
 }
-
 .compartilhar{
-    font-size: 20px;
-    margin-left: 15px;
+    font-size: 24px;
 }
 .comentar{
-    font-size: 20px;
-    margin-left: 15px;
+    font-size: 24px;
 }
 .salvar{
-    font-size:20px;
-    margin-left: 478px;
+    font-size: 24px;
 }
 .curtidas-post{
     height: 21px;
@@ -220,12 +227,11 @@ body{
 .negrito{
     font-weight: 500;
 }
+/* Fim posts */
 .side-bar{
-    background-color: #E5E5E5;
     width: 293px;
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
 }
 .conteudo-side-bar{
     margin-left: 29px;
@@ -263,7 +269,6 @@ body{
     color:#262626;
 }
 .sugestoes-perfil{
-    
     width: 293px;
     margin-top: 17px;
     display: flex;
@@ -272,7 +277,6 @@ body{
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    
 }
 .perfil-sugerido{
     width: 293px;
@@ -297,9 +301,8 @@ body{
     font-weight: 400;
     color: #8E8E8E;
     margin-left: 11px;
-    margin-top: 6px;
+    margin-top: 4px;
 }
-
 .seguir-sugeridos{
     color: #139EF2;
     font-size: 12px;
@@ -355,9 +358,17 @@ body{
 
     .borda-histories img{
         border-radius: 33px;
+        margin-top: 1px;
+    }
+    .histories-img img{
+        top: 6px;
     }
     .post-feed{
         margin-top: 0px;
+        width: 100%;
+    }
+    .img-post img{
+        width: 100%;
     }
     .barra-inferior-mobile{
         background-color: #FFFFFF;
@@ -382,4 +393,13 @@ body{
     .add-publi{
         font-size: 24px;
     }
+}
+
+/* bonus */
+
+video{
+    width: 614px;
+    max-height: 614px;
+    min-height: calc(100vh - 114px);
+    
 }

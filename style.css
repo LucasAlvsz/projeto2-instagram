@@ -176,7 +176,7 @@ body{
 }
 .img-post img{
     width: 614px;
-    min-height: calc(100vh - 114px);
+    min-height: 614px;
     max-height: calc(100vh - 114px);
 }
 .icone-header{
@@ -394,12 +394,9 @@ body{
         font-size: 24px;
     }
 }
-
 /* bonus */
-
 video{
     width: 614px;
-    max-height: 614px;
-    min-height: calc(100vh - 114px);
-    
+    min-height: 614px;
+    max-height: calc(100vh - 114px);
 }

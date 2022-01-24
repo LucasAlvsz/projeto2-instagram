@@ -309,9 +309,7 @@ body{
     line-height: 14.06px;
     font-weight: 500;
 }
-.curtidas-post-mobile{
-    display: none;
-}
+
 @media (max-width: 935px){
     .side-bar{
         display: none;
